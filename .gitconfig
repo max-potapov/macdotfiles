@@ -1,0 +1,16 @@
+[user]
+	name = Maxim V. Potapov
+	email = mpotapov@unison.com
+[color]
+	ui = true
+
+[merge]
+	tool = opendiff
+
+[core] 
+	whitespace=-indent-with-non-tab,trailing-space,cr-at-eol,tab-in-indent
+	excludesfile = /Users/max/.gitexcludes
+
+[diff "localizablestrings"]
+	textconv = "iconv -f utf-16 -t utf-8"
+
