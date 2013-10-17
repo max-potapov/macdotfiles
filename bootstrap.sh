@@ -15,17 +15,17 @@ EOF
 }
 
 fail() {
-	echo '** something went wrong'
-	exit 1
+    echo '** something went wrong'
+    exit 1
 }
 
 install_brew() {
-	pushd ~ || fail
-	mkdir .homebrew || fail
-	curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C .homebrew || fail
-	brew update || fail
-	popd || fail
-	echo "-- brew has been sucessfully installed"
+    pushd ~ || fail
+    mkdir .homebrew || fail
+    curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C .homebrew || fail
+    brew update || fail
+    popd || fail
+    echo "-- brew has been sucessfully installed"
 }
 
 create_symlink_for() {
@@ -36,9 +36,9 @@ create_symlink_for() {
 
 link_dotfiles() {
     pushd $SCRIPT_DIR || fail
-	create_symlink_for ".bash*" || fail
-	create_symlink_for ".git?*" || fail
-	create_symlink_for ".hg?*" || fail
+    create_symlink_for ".bash*" || fail
+    create_symlink_for ".git?*" || fail
+    create_symlink_for ".hg?*" || fail
     popd || fail
     echo "-- dotfiles has been sucessfully linked"
 }
