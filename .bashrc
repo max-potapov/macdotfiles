@@ -7,7 +7,8 @@
 export PATH="/Users/$(whoami)/.homebrew/bin:/Users/$(whoami)/.homebrew/sbin:$PATH"
 export PATH="$PATH":/Users/$(whoami)/devel/depot_tools
 export LESS="-R"
-export EDITOR="nano"
+export EDITOR="vim"
+
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 export GREP_OPTIONS='--color=auto'
