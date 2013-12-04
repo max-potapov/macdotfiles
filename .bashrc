@@ -24,7 +24,7 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+PS1='[`tput setaf 3`\u@\h`tput sgr0` `tput setaf 2`\W`tput sgr0`$(__git_ps1 " (`tput setaf 1`%s`tput sgr0`)")]\$ '
 
 HISTCONTROL=ignoreboth
 HISTIGNORE='reset:clear'
@@ -49,3 +49,6 @@ shopt -s cdspell
 
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+if [ -f ~/Tools/mvncolor/mvncolor.sh ]; then
+  . ~/Tools/mvncolor/mvncolor.sh
+fi
