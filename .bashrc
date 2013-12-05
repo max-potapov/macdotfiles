@@ -24,7 +24,11 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
-PS1='[`tput setaf 3`\u@\h`tput sgr0` `tput setaf 2`\W`tput sgr0`$(__git_ps1 " (`tput setaf 1`%s`tput sgr0`)")]\$ '
+RED_COLOR=$(tput setaf 1)
+GREEN_COLOR=$(tput setaf 2)
+YELLOW_COLOR=$(tput setaf 3)
+RESET=$(tput sgr0)
+PS1='[\[$YELLOW_COLOR\]\u@\h\[$RESET\] \[$GREEN_COLOR\]\W\[$RESET\]$(__git_ps1 " (\[$RED_COLOR\]%s\[$RESET\])")]\$ '
 
 HISTCONTROL=ignoreboth
 HISTIGNORE='reset:clear'
