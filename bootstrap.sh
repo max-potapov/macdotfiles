@@ -23,7 +23,6 @@ install_brew() {
     pushd ~ || fail
     mkdir .homebrew || fail
     curl -L https://github.com/mxcl/homebrew/tarball/master | tar xz --strip 1 -C .homebrew || fail
-    brew update || fail
     popd || fail
     echo "-- brew has been sucessfully installed"
 }
