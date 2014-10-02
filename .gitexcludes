@@ -1,3 +1,5 @@
 *~
 *.swp
 .idea/
+*.xccheckout
+atlassian-ide-plugin.xml
