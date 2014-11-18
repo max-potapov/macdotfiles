@@ -2,5 +2,5 @@
 *.swp
 .idea/
 *.xccheckout
-*/xcuserdata/
+**/xcuserdata/*
 atlassian-ide-plugin.xml
