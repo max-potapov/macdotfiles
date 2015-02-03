@@ -15,7 +15,7 @@
 	textconv = "iconv -f utf-16 -t utf-8"
 
 [push]
-	default = matching
+	default = simple
 
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
