@@ -9,6 +9,8 @@ export PATH="$PATH:/Users/$(whoami)/devel/depot_tools"
 
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+export DEVELOPER_DIR=$(xcode-select -print-path)
+
 export LESS="-R"
 export EDITOR="vim"
 
