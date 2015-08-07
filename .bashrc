@@ -4,9 +4,7 @@
 
 [[ $- != *i* ]] && return
 
-export PATH="/Users/$(whoami)/.homebrew/bin:/Users/$(whoami)/.homebrew/sbin:$PATH"
-export PATH="$PATH:/Users/$(whoami)/devel/depot_tools"
-
+export PATH="$(HOME)/.homebrew/bin:$(HOME)/.homebrew/sbin:$PATH"
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 export DEVELOPER_DIR=$(xcode-select -print-path)
@@ -55,6 +53,3 @@ shopt -s cdspell
 
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-if [ -f ~/Tools/mvncolor/mvncolor.sh ]; then
-  . ~/Tools/mvncolor/mvncolor.sh
-fi
