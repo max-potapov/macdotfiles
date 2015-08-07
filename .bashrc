@@ -4,7 +4,7 @@
 
 [[ $- != *i* ]] && return
 
-export PATH="$(HOME)/.homebrew/bin:$(HOME)/.homebrew/sbin:$PATH"
+export PATH="$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH"
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 export DEVELOPER_DIR=$(xcode-select -print-path)
