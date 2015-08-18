@@ -3,5 +3,6 @@
 .idea/
 *.xccheckout
 **/xcuserdata/*
+*.xcscmblueprint
 atlassian-ide-plugin.xml
 .DS_Store
