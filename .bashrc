@@ -28,7 +28,7 @@ RED_COLOR=$(tput setaf 1)
 GREEN_COLOR=$(tput setaf 2)
 YELLOW_COLOR=$(tput setaf 3)
 RESET=$(tput sgr0)
-PS1='[\[$YELLOW_COLOR\]\u@\h\[$RESET\] \[$GREEN_COLOR\]\W\[$RESET\]$(__git_ps1 " (\[$RED_COLOR\]%s\[$RESET\])")]\$ '
+PS1='[\[$YELLOW_COLOR\]\u@\h\[$RESET\] \[$GREEN_COLOR\]\W\[$RESET\]$(git-radar --bash --fetch " (\[$RED_COLOR\]%s\[$RESET\])")]\$ '
 
 HISTCONTROL=ignoreboth
 HISTIGNORE='reset:clear'
