@@ -37,5 +37,5 @@ colorscheme solarized
 set laststatus=2                                " Airline
 let g:airline_powerline_fonts = 1
 
-autocmd BufNewFile,BufWrite,BufRead Podfile setlocal filetype=podfile syntax=ruby
+autocmd BufNewFile,BufWrite,BufRead Podfile,*.podspec setlocal filetype=podfile syntax=ruby
 
