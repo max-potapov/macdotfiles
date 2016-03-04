@@ -1,0 +1,15 @@
+[submodule "vimbundle/vim-airline"]
+	path = vimbundle/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "vimbundle/vim-colors-solarized"]
+	path = vimbundle/vim-colors-solarized
+	url = git@github.com:altercation/vim-colors-solarized.git
+[submodule "vimbundle/vim-fugitive"]
+	path = vimbundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "vimbundle/vim-gradle"]
+	path = vimbundle/vim-gradle
+	url = git@github.com:tfnico/vim-gradle.git
+[submodule "vimbundle/vim-surround"]
+	path = vimbundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git

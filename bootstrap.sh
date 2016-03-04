@@ -38,6 +38,7 @@ link_dotfiles() {
     create_symlink_for ".bash*" || fail
     create_symlink_for ".git?*" || fail
     create_symlink_for ".hg?*" || fail
+    ln -s $SCRIPT_DIR/vimbundle ~/.vim/bundle || fail
     popd || fail
     echo "-- dotfiles has been sucessfully linked"
 }
