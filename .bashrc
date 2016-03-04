@@ -8,6 +8,9 @@ export ANDROID_HOME=$HOME/devel/android-sdk-macosx
 export PATH="$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH"
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
+
 export DEVELOPER_DIR=$(xcode-select -print-path)
 
 export LESS="-R"
