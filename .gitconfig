@@ -1,13 +1,14 @@
 [user]
 	name = Maxim V. Potapov
 	email = mpotapov@unison.com
+
 [color]
 	ui = true
 
 [merge]
 	tool = opendiff
 
-[core] 
+[core]
 	whitespace=-indent-with-non-tab,trailing-space,cr-at-eol,tab-in-indent
 	excludesfile = ~/.gitexcludes
 
@@ -19,7 +20,12 @@
 
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
+[mergetool "mergepbx"]
+    cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+
