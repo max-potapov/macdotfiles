@@ -11,7 +11,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
 
-export DEVELOPER_DIR=$(xcode-select -print-path)
+#export DEVELOPER_DIR=$(xcode-select -print-path)
 
 export LESS="-R"
 export EDITOR="vim"
