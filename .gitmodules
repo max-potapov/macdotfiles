@@ -13,3 +13,6 @@
 [submodule "vimbundle/vim-surround"]
 	path = vimbundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "vimbundle/vim-swift"]
+	path = vimbundle/vim-swift
+	url = git@github.com:toyamarinyon/vim-swift.git
