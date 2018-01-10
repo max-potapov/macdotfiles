@@ -1,8 +1,10 @@
 bash-completion
-grc
+cloc
 git
-htop-osx
+michaeldfallen/formula/git-radar
+grc
+htop
+mergepbx
 p7zip
 swiftlint
-mergepbx
 wget
