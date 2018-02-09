@@ -8,6 +8,10 @@ export ANDROID_HOME=$HOME/devel/android-sdk-macosx
 export PATH="$HOME/.homebrew/bin:$HOME/.homebrew/sbin:$PATH"
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$HOME/devel/webrtc/depot_tools
+export PATH=$PATH:$HOME/Library/Python/2.7/bin
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
