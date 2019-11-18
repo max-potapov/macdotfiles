@@ -7,3 +7,6 @@
 atlassian-ide-plugin.xml
 .DS_Store
 Pods/*
+timeline.xctimeline
+.swiftpm/
+.build/

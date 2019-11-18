@@ -57,8 +57,14 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+if [ -n "`which swift`" ]; then
+    eval "`swift package completion-tool generate-bash-script`"
+fi
+
 shopt -s checkwinsize
 shopt -s cdspell
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 

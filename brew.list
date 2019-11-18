@@ -2,4 +2,5 @@ cloc
 git
 htop
 p7zip
+smartmontools
 wget
