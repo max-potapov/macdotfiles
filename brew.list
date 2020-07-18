@@ -1,4 +1,6 @@
 cloc
+git
+git-gui
 htop
 p7zip
 smartmontools
