@@ -1,7 +1,7 @@
 world: spacevim brew dotfiles
 
 brew:
-	/usr/bin/ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	/bin/bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 	echo 'brew install $$(cat brew.list)'
 
 zsh:
@@ -10,7 +10,7 @@ zsh:
 oh-my-zsh:
 	sh -c "$$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-power10k: oh-my-zsh
+power10k:
 	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
 	echo 'Set ZSH_THEME=powerlevel10k/powerlevel10k in your ~/.zshrc'
 
