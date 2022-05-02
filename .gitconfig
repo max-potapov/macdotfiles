@@ -26,6 +26,9 @@
 	smudge = git-lfs smudge %f
 	required = true
 
-[mergetool "mergepbx"]
-    cmd = mergepbx "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+[init]
+  defaultBranch = master
+
+[pull]
+  rebase = false
 
