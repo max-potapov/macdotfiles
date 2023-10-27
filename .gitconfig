@@ -33,3 +33,6 @@
 [pull]
   rebase = false
 
+[merge "kintsugi"]
+	name = Kintsugi driver
+	driver = kintsugi driver %O %A %B %P
