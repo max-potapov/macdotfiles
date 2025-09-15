@@ -10,3 +10,4 @@ Pods/*
 timeline.xctimeline
 .swiftpm/
 .build/
+.secrets

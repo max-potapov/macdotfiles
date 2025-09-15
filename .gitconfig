@@ -12,9 +12,6 @@
 	whitespace=-indent-with-non-tab,trailing-space,cr-at-eol,tab-in-indent
 	excludesfile = ~/.gitexcludes
 
-[diff "localizablestrings"]
-	textconv = "iconv -f utf-16 -t utf-8"
-
 [push]
 	default = simple
 	autoSetupRemote = true
@@ -22,17 +19,9 @@
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-
 [init]
   defaultBranch = master
 
 [pull]
   rebase = false
 
-[merge "kintsugi"]
-	name = Kintsugi driver
-	driver = kintsugi driver %O %A %B %P
