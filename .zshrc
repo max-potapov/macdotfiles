@@ -35,7 +35,7 @@ plugins=(git gitfast git-prompt mise)
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 
 # Initialize tools (silent to avoid instant prompt warnings)
-eval "$(~/.local/bin/mise activate zsh)" > /dev/null 2>&1
+eval "$(mise activate zsh)" > /dev/null 2>&1
 
 # Load Oh My Zsh and Powerlevel10k
 source $ZSH/oh-my-zsh.sh

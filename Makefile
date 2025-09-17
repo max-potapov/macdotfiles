@@ -20,7 +20,7 @@ brew:
 		/bin/bash -c "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; \
 	fi
 	@echo "Installing Homebrew formulae..."
-	@brew install cloc git htop wget minidlna swiftformat neofetch cursor-cli zellij lazygit lazyvim neovim gh pre-commit
+	@brew install cloc git htop wget minidlna swiftformat neofetch cursor-cli zellij lazygit lazyvim neovim gh pre-commit mise
 	@echo "Installing Homebrew casks..."
 	@brew install --cask ghostty font-0xproto-nerd-font qlmarkdown
 
