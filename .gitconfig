@@ -25,3 +25,5 @@
 [pull]
   rebase = false
 
+[remote "origin"]
+	prune = true
