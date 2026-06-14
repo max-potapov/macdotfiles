@@ -43,3 +43,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Zellij AI CLI alias
 alias ai-cli='zellij --layout ai-coding'
+# Drop-in `ssh` wrapper that prepares the remote session for Ghostty before exec'ing the real `ssh` binary
+alias ssh='ghostty +ssh --'
